@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ravindu Chamara Balasooriya - Full-Stack Web Developer | IT Graduate | Passionate about building robust, scalable software solutions">
+    <meta name="keywords" content="Full-Stack Developer, Web Developer, Laravel, React, JavaScript, PHP, Portfolio">
+    <meta name="author" content="Ravindu Chamara Balasooriya">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ravindu Chamara Balasooriya - Full-Stack Web Developer">
+    <meta property="og:description" content="IT Graduate | Full-Stack Web Developer | Passionate about building robust, scalable software solutions">
+    <meta property="og:image" content="https://ravindu-portfolio.com/assets/img/profile-placeholder.png">
+    <meta property="og:url" content="https://ravindu-portfolio.com">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ravindu Chamara Balasooriya - Full-Stack Web Developer">
+    <meta name="twitter:description" content="IT Graduate | Full-Stack Web Developer | Passionate about building robust, scalable software solutions">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ravindu Chamara Balasooriya",
+        "jobTitle": "Full-Stack Web Developer",
+        "url": "https://ravindu-portfolio.com",
+        "sameAs": [
+            "https://github.com/it21348648",
+            "https://github.com/ravindu-rcb",
+            "http://www.linkedin.com/in/ravindu-balasooriya-07ab42215"
+        ],
+        "email": "ravindubalasooriya.rcb@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "LK",
+            "addressLocality": "Sri Lanka"
+        }
+    }
+    </script>
+    
+    <title>Ravindu Chamara Balasooriya - Full-Stack Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#hero" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" aria-label="Home">RCB</a>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="#hero" class="nav-link" role="menuitem">Home</a></li>
+                <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+                <li role="none"><a href="#experience" class="nav-link" role="menuitem">Experience</a></li>
+                <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+                <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">
+                <span class="theme-icon" id="themeIcon">🌙</span>
+            </button>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="hero" aria-label="Hero section">
+        <div class="hero-background"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-badge">Currently open to opportunities</span>
+                <h1 class="hero-title">
+                    <span class="hero-greeting">Hi, I'm</span>
+                    <span class="hero-name">Ravindu Chamara Balasooriya</span>
+                </h1>
+                <p class="hero-subtitle">IT Graduate | Full-Stack Web Developer</p>
+                <p class="hero-description">
+                    Passionate about building robust, scalable software solutions with attention to detail. 
+                    Thriving in fast-paced environments and committed to delivering high-quality code that makes a difference.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    <a href="assets/Ravindu_Balasooriya_CV.pdf" class="btn btn-outline" id="cvDownload" download aria-label="Download CV">
+                        Download CV
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/it21348648" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://github.com/ravindu-rcb" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile 2" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a href="http://www.linkedin.com/in/ravindu-balasooriya-07ab42215" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="mailto:ravindubalasooriya.rcb@gmail.com" aria-label="Email" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-arrow"></div>
+        </div> -->
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="section about" aria-label="About section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a motivated IT graduate with a passion for developing robust, scalable software solutions. 
+                        With a strong foundation in both front-end and back-end technologies, I bring a detail-oriented 
+                        approach to every project. I thrive in fast-paced environments where I can continuously learn 
+                        and contribute to meaningful solutions.
+                    </p>
+                    <p>
+                        My experience spans full-stack development, cloud computing, testing methodologies, and research 
+                        in AI/ML applications. I believe in writing clean, maintainable code and following best practices 
+                        to deliver high-quality software that stands the test of time.
+                    </p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">💻</div>
+                        <h3>Full-Stack</h3>
+                        <p>End-to-end development expertise</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">☁️</div>
+                        <h3>Cloud</h3>
+                        <p>AWS & Azure experience</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🧪</div>
+                        <h3>Testing/QA</h3>
+                        <p>Automated testing & quality assurance</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🔬</div>
+                        <h3>Research/AI</h3>
+                        <p>ML & AI research applications</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="section skills" aria-label="Skills section">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-filter" role="tablist" aria-label="Skill categories">
+                <button class="filter-btn active" data-category="all" role="tab" aria-selected="true">All</button>
+                <button class="filter-btn" data-category="programming" role="tab" aria-selected="false">Programming</button>
+                <button class="filter-btn" data-category="frameworks" role="tab" aria-selected="false">Frameworks</button>
+                <button class="filter-btn" data-category="databases" role="tab" aria-selected="false">Databases</button>
+                <button class="filter-btn" data-category="tools" role="tab" aria-selected="false">Tools</button>
+                <button class="filter-btn" data-category="cloud" role="tab" aria-selected="false">Cloud</button>
+                <button class="filter-btn" data-category="other" role="tab" aria-selected="false">Other</button>
+            </div>
+            <div class="skills-grid" id="skillsGrid" role="tabpanel"></div>
+        </div>
+    </section>
+    
+    <!-- Experience Section -->
+    <section id="experience" class="section experience" aria-label="Experience section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Junior Full-Stack Web Developer</h3>
+                            <span class="timeline-company">Smallholder Agribusiness and Resilience Project (SARP), Ministry of Agriculture, Sri Lanka</span>
+                            <span class="timeline-date">Jun 2024 – Aug 2025</span>
+                        </div>
+                        <p class="timeline-role">Previously: Intern Full-Stack Web Developer (6 months)</p>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Blade</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">Hostinger</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>Developed and maintained a modular Management Information System (MIS) with multiple interconnected modules including Beneficiary Management, Infrastructure, Training Programs, Expressions of Interest (EOI), Livestock Management, and Tank Rehabilitation</li>
+                            <li>Implemented comprehensive CRUD operations, interactive dashboards, and advanced features including CSV/PDF import-export functionality and secure file upload systems</li>
+                            <li>Designed and implemented Role-Based Access Control (RBAC) middleware with granular permission management to ensure secure data access across user roles</li>
+                            <li>Built efficient search, filter, and pagination systems to handle large datasets, optimizing performance and user experience</li>
+                            <li>Created complex relational database models with one-to-many and many-to-many relationships, ensuring data integrity and scalability</li>
+                            <li>Conducted thorough testing, debugging, and optimization to ensure reliability, performance, and security compliance</li>
+                            <li>Deployed and maintained the application on Hostinger subdomain with SSL encryption, automated deployments via GitHub SSH integration, and proper environment configuration including database migrations and storage linking</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="section projects" aria-label="Projects section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-controls">
+                <div class="projects-search">
+                    <input type="text" id="projectSearch" class="search-input" placeholder="Search projects by title, technology, or category..." aria-label="Search projects">
+                </div>
+                <div class="projects-filters" role="tablist" aria-label="Project category filters">
+                    <button class="filter-chip active" data-category="all" role="tab" aria-selected="true">All</button>
+                    <button class="filter-chip" data-category="Research" role="tab" aria-selected="false">Research</button>
+                    <button class="filter-chip" data-category="Full-Stack" role="tab" aria-selected="false">Full-Stack</button>
+                    <button class="filter-chip" data-category="Mobile" role="tab" aria-selected="false">Mobile</button>
+                    <button class="filter-chip" data-category="QA" role="tab" aria-selected="false">QA</button>
+                    <button class="filter-chip" data-category="Cloud" role="tab" aria-selected="false">Cloud</button>
+                    <button class="filter-chip" data-category="Systems" role="tab" aria-selected="false">Systems</button>
+                    <button class="filter-chip" data-category="UI-UX" role="tab" aria-selected="false">UI-UX</button>
+                </div>
+            </div>
+            <div class="projects-grid" id="projectsGrid"></div>
+        </div>
+    </section>
+    
+    <!-- Education & Certifications Section -->
+    <section id="education" class="section education" aria-label="Education and certifications section">
+        <div class="container">
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <h3>BSc (Hons) IT (Specializing IT)</h3>
+                    <p class="education-institution">SLIIT</p>
+                    <p class="education-detail">GPA: 3.03</p>
+                </div>
+                <div class="education-card">
+                    <h3>Diploma in IT</h3>
+                    <p class="education-institution">Esoft</p>
+                </div>
+                <div class="education-card">
+                    <h3>Diploma in English</h3>
+                    <p class="education-institution">Esoft</p>
+                </div>
+                <!-- <div class="education-card">
+                    <h3>ITIL Foundation</h3>
+                    <p class="education-institution">Alison (Online)</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="section contact" aria-label="Contact section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-label">Email:</span>
+                            <div class="contact-value">
+                                <a href="mailto:ravindubalasooriya.rcb@gmail.com" class="contact-link">ravindubalasooriya.rcb@gmail.com</a>
+                                <button class="copy-btn" data-text="ravindubalasooriya.rcb@gmail.com" aria-label="Copy email">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+                                    Copy
+                                </button>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Phone:</span>
+                            <a href="tel:+94769319786" class="contact-link">+94 76 931 9786</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Location:</span>
+                            <span class="contact-link">Sri Lanka</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" aria-label="Contact form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <a href="https://github.com/it21348648" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">GitHub</a>
+                    <a href="http://www.linkedin.com/in/ravindu-balasooriya-07ab42215" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">LinkedIn</a>
+                    <a href="mailto:ravindubalasooriya.rcb@gmail.com" aria-label="Email">Email</a>
+                </div>
+                <p class="footer-credit">© 2025 Ravindu Chamara Balasooriya. Built with passion.</p>
+                <button class="back-to-top" id="backToTop" aria-label="Back to top">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+                </button>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">×</button>
+            <h2 id="modalTitle" class="modal-title"></h2>
+            <div id="modalBody" class="modal-body"></div>
+        </div>
+    </div>
+    
+    <!-- Toast Notification -->
+    <div class="toast" id="toast" role="alert" aria-live="polite" aria-atomic="true"></div>
+    
+    <!-- Command Palette -->
+    <div class="command-palette" id="commandPalette" role="dialog" aria-labelledby="commandPaletteTitle" aria-hidden="true">
+        <div class="command-palette-overlay" id="commandPaletteOverlay"></div>
+        <div class="command-palette-content">
+            <div class="command-palette-header">
+                <h3 id="commandPaletteTitle">Navigate</h3>
+                <button class="command-palette-close" id="commandPaletteClose" aria-label="Close command palette">×</button>
+            </div>
+            <input type="text" id="commandPaletteInput" class="command-palette-input" placeholder="Type to search sections..." aria-label="Search sections">
+            <div class="command-palette-list" id="commandPaletteList" role="listbox"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

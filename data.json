@@ -1,0 +1,202 @@
+{
+  "projects": [
+    {
+      "id": "cocoguard",
+      "title": "Mobile-Based Coconut Mite Detection System (CocoGuard)",
+      "category": "Research",
+      "shortDescription": "Lightweight real-time mobile application using deep learning and image super-resolution to detect coconut mite infestations from field-captured images.",
+      "impactBullets": [
+        "Evaluated multiple CNN architectures (MobileNetV2, ResNet50, Custom CNN, Vision Transformer) and selected MobileNetV2 for optimal mobile efficiency",
+        "Integrated Real-ESRGAN super-resolution for enhanced image quality, improving detection accuracy in field conditions",
+        "Research paper published at IcoDSA Conference, contributing to agricultural technology solutions"
+      ],
+      "technologies": ["React Native", "Expo Go", "Flask", "Python", "TensorFlow", "MobileNetV2", "ResNet50", "Vision Transformer", "Real-ESRGAN"],
+      "links": {
+        "github": null,
+        "demo": null,
+        "paper": null
+      },
+      "featured": true
+    },
+    {
+      "id": "social-media-platform",
+      "title": "Social Media Platform",
+      "category": "Full-Stack",
+      "shortDescription": "Collaborative platform connecting employees, employers, businesses, and consultants for job opportunities, course listings, and consultant services.",
+      "impactBullets": [
+        "Enabled seamless job search and posting functionality, connecting job seekers with employers efficiently",
+        "Integrated course management system allowing businesses to post and users to discover educational opportunities",
+        "Built consultant service marketplace, facilitating connections between businesses and service providers"
+      ],
+      "technologies": ["React", "Tailwind CSS", "Ant Design", "Node.js", "MongoDB"],
+      "links": {
+        "github": null,
+        "demo": null,
+        "paper": null
+      },
+      "featured": false
+    },
+    {
+      "id": "gym-social-platform",
+      "title": "Gym Social Media Platform",
+      "category": "Full-Stack",
+      "shortDescription": "Social platform for fitness enthusiasts to share posts, videos, workout status, and meal plans within a connected community.",
+      "impactBullets": [
+        "Enabled video sharing and workout status tracking, fostering community engagement among fitness enthusiasts",
+        "Implemented meal plan sharing functionality, helping users exchange nutrition strategies",
+        "Built real-time social feed with post interactions, creating an active fitness community"
+      ],
+      "technologies": ["React", "Bootstrap", "Spring Boot", "MySQL"],
+      "links": {
+        "github": null,
+        "demo": null,
+        "paper": null
+      },
+      "featured": false
+    },
+    {
+      "id": "hospital-management",
+      "title": "Hospital Management System",
+      "category": "Full-Stack",
+      "shortDescription": "Comprehensive system designed to improve efficiency of healthcare institutions through streamlined operations and patient management.",
+      "impactBullets": [
+        "Streamlined patient registration and medical records management, reducing administrative overhead",
+        "Implemented appointment scheduling system, improving patient access and reducing waiting times",
+        "Automated billing and invoicing processes, enhancing financial management and accuracy"
+      ],
+      "technologies": ["React", "Bootstrap", "Node.js", "MongoDB"],
+      "links": {
+        "github": null,
+        "demo": null,
+        "paper": null
+      },
+      "featured": false
+    },
+    {
+      "id": "freelancing-app",
+      "title": "Freelancing App",
+      "category": "Mobile",
+      "shortDescription": "Mobile application connecting freelancers with clients, facilitating project collaboration and comprehensive freelancing work management.",
+      "impactBullets": [
+        "Enabled project posting and bidding system, connecting freelancers with clients efficiently",
+        "Implemented real-time messaging and contract management, streamlining collaboration workflows",
+        "Integrated Firebase services for authentication and data synchronization, ensuring secure and reliable operations"
+      ],
+      "technologies": ["Kotlin", "Firebase Authentication", "Firebase Realtime Database"],
+      "links": {
+        "github": null,
+        "demo": null,
+        "paper": null
+      },
+      "featured": false
+    },
+    {
+      "id": "event-photography",
+      "title": "Event Photography Management System",
+      "category": "Full-Stack",
+      "shortDescription": "Streamlined system for event photography services, managing clients, scheduling, photo galleries, and invoicing in one platform.",
+      "impactBullets": [
+        "Automated client management and event scheduling, reducing manual coordination efforts",
+        "Centralized photo gallery organization, improving client access and delivery workflows",
+        "Integrated invoicing system, streamlining billing processes and payment tracking"
+      ],
+      "technologies": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
+      "links": {
+        "github": null,
+        "demo": null,
+        "paper": null
+      },
+      "featured": false
+    },
+    {
+      "id": "selenium-testing",
+      "title": "Automated Web Application Testing using Selenium",
+      "category": "QA",
+      "shortDescription": "Comprehensive QA project combining manual and automated testing methodologies with Selenium WebDriver and Selenium IDE for thorough test coverage.",
+      "impactBullets": [
+        "Created detailed test cases covering key UI interactions, ensuring comprehensive application quality",
+        "Developed automated test scripts using Selenium WebDriver, reducing manual testing time and improving consistency",
+        "Implemented defect reporting with severity and priority levels, facilitating efficient bug resolution"
+      ],
+      "technologies": ["Selenium WebDriver", "Selenium IDE", "Manual Testing", "Test Case Design", "Defect Reporting"],
+      "links": {
+        "github": null,
+        "demo": null,
+        "paper": null
+      },
+      "featured": false
+    },
+    {
+      "id": "cloud-student-records",
+      "title": "Cloud-Based Student Records Hosting System",
+      "category": "Cloud",
+      "shortDescription": "Scalable and highly available AWS infrastructure with load balancing, auto-scaling, and secure access, following Well-Architected Framework best practices.",
+      "impactBullets": [
+        "Designed scalable architecture with auto-scaling groups, ensuring optimal performance under varying loads",
+        "Implemented load balancing and VPC security, providing high availability and secure access",
+        "Followed AWS Well-Architected Framework principles, ensuring cost-effective and reliable infrastructure"
+      ],
+      "technologies": ["AWS EC2", "S3", "RDS MySQL", "Load Balancer", "Auto Scaling Group", "VPC", "Security Groups", "Route 53"],
+      "links": {
+        "github": null,
+        "demo": null,
+        "paper": null
+      },
+      "featured": false
+    },
+    {
+      "id": "concurrent-chat",
+      "title": "Concurrent Chat Server and Client Program",
+      "category": "Systems",
+      "shortDescription": "C-based concurrent chat system with user registration, one-on-one messaging, waiting room functionality, and DNS configuration for server resolution.",
+      "impactBullets": [
+        "Implemented concurrent multi-client support using socket programming, enabling real-time communication",
+        "Developed user registration and waiting room system, managing client connections efficiently",
+        "Configured DNS records for seamless server resolution, demonstrating systems-level networking expertise"
+      ],
+      "technologies": ["C", "Socket Programming", "DNS", "CentOS", "VMware"],
+      "links": {
+        "github": null,
+        "demo": null,
+        "paper": null
+      },
+      "featured": false
+    },
+    {
+      "id": "ui-ux-redesign",
+      "title": "UI/UX Redesign",
+      "category": "UI-UX",
+      "shortDescription": "Redesigned old webpage UI using Figma, creating modern and intuitive user experience with improved user flows and visual design.",
+      "impactBullets": [
+        "Transformed outdated interface into modern, intuitive design, improving user engagement and satisfaction",
+        "Enhanced user flows and navigation patterns, reducing cognitive load and improving task completion rates",
+        "Created comprehensive design system and prototypes, facilitating smooth handoff to development teams"
+      ],
+      "technologies": ["Figma", "UI/UX", "Prototyping"],
+      "links": {
+        "github": null,
+        "demo": null,
+        "paper": null
+      },
+      "featured": false
+    },
+    {
+      "id": "qa-test-cases",
+      "title": "QA Test Case Development",
+      "category": "QA",
+      "shortDescription": "Developed comprehensive test cases for Event Photography Management System, ensuring functionality, reliability, and user experience across various scenarios.",
+      "impactBullets": [
+        "Created detailed test scenarios covering all system functionalities, ensuring comprehensive quality coverage",
+        "Validated user experience across different user roles and workflows, identifying and resolving usability issues",
+        "Established reliable testing framework, enabling ongoing quality assurance and regression testing"
+      ],
+      "technologies": ["Test Case Design", "QA", "Functional Testing"],
+      "links": {
+        "github": null,
+        "demo": null,
+        "paper": null
+      },
+      "featured": false
+    }
+  ]
+}
