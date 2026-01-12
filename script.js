@@ -181,15 +181,15 @@ const EMBEDDED_PROJECTS = [
     },
     {
         "id": "concurrent-chat",
-        "title": "Concurrent Chat Server and Client Program",
-        "category": "Systems",
-        "shortDescription": "C-based concurrent chat system with user registration, one-on-one messaging, waiting room functionality, and DNS configuration for server resolution.",
+        "title": "Restaurant Management System",
+        "category": "Full-Stack",
+        "shortDescription": "A web based system to manage concessions, orders, and kitchen workflows with automated order scheduling and real time status tracking.",
         "impactBullets": [
-            "Implemented concurrent multi-client support using socket programming, enabling real-time communication",
-            "Developed user registration and waiting room system, managing client connections efficiently",
-            "Configured DNS records for seamless server resolution, demonstrating systems-level networking expertise"
+            "Streamlined concession and order management, reducing manual effort",
+            "Automated order dispatch to kitchen based on scheduled time, improving operational efficiency",
+            "Real time kitchen dashboard for tracking order status and faster order fulfillment"
         ],
-        "technologies": ["C", "Socket Programming", "DNS", "CentOS", "VMware"],
+        "technologies": ["PHP", "Laravel", "MySQL", "Bootstrap", "JavaScript","Laravel Queue", "Laravel Scheduler", "Git"],
         "links": {
             "github": null,
             "demo": null,
