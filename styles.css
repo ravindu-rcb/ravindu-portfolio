@@ -490,18 +490,29 @@ body {
 }
 
 /* Section ambient background animation */
-.section::before {
+.section::before,
+.section::after {
     content: '';
     position: absolute;
-    inset: -30%;
-    background: radial-gradient(circle at 20% 20%, rgba(99, 102, 241, 0.12), transparent 45%),
-                radial-gradient(circle at 80% 30%, rgba(236, 72, 153, 0.10), transparent 40%),
-                radial-gradient(circle at 40% 80%, rgba(139, 92, 246, 0.12), transparent 45%);
-    filter: blur(40px);
-    opacity: 0.9;
-    animation: section-float 18s ease-in-out infinite alternate;
+    inset: -35%;
+    border-radius: 50%;
     pointer-events: none;
+    filter: blur(45px);
+    opacity: 0.55;
     z-index: 0;
+    animation: section-orb 26s ease-in-out infinite;
+    mix-blend-mode: screen;
+}
+
+.section::before {
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.25), transparent 60%);
+    animation-duration: 24s;
+}
+
+.section::after {
+    background: radial-gradient(circle, rgba(236, 72, 153, 0.2), transparent 55%);
+    animation-duration: 30s;
+    animation-delay: -8s;
 }
 
 .section > * {
@@ -509,15 +520,18 @@ body {
     z-index: 1;
 }
 
-@keyframes section-float {
+@keyframes section-orb {
     0% {
-        transform: translate3d(-10px, 0px, 0);
+        transform: translate3d(-12%, -10%, 0) scale(1);
     }
-    50% {
-        transform: translate3d(12px, 6px, 0);
+    30% {
+        transform: translate3d(10%, -4%, 0) scale(1.08);
+    }
+    65% {
+        transform: translate3d(-6%, 14%, 0) scale(0.95);
     }
     100% {
-        transform: translate3d(-8px, -10px, 0);
+        transform: translate3d(8%, 6%, 0) scale(1.05);
     }
 }
 
@@ -1363,6 +1377,42 @@ body {
     gap: var(--spacing-md);
     flex-wrap: wrap;
     margin-top: var(--spacing-lg);
+}
+
+/* Cursor Indicator */
+.cursor-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1.5px solid var(--accent-primary);
+    pointer-events: none;
+    transform: translate3d(-50%, -50%, 0) scale(1);
+    transition: transform 140ms ease, opacity 200ms ease, border-color 200ms ease;
+    opacity: 0;
+    z-index: 4000;
+    mix-blend-mode: difference;
+}
+
+.cursor-indicator.is-visible {
+    opacity: 0.85;
+}
+
+.cursor-indicator.is-active {
+    transform: translate3d(-50%, -50%, 0) scale(0.8);
+    border-color: var(--accent-secondary);
+}
+
+.cursor-indicator.is-hidden {
+    opacity: 0;
+}
+
+@media (pointer: coarse) {
+    .cursor-indicator {
+        display: none;
+    }
 }
 
 /* Toast */

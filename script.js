@@ -31,6 +31,7 @@ const filterButtons = document.querySelectorAll('.filter-btn');
 const copyButtons = document.querySelectorAll('.copy-btn');
 const projectSearch = document.getElementById('projectSearch');
 const projectFilterChips = document.querySelectorAll('.filter-chip');
+const cursorIndicator = document.querySelector('.cursor-indicator');
 
 // Embedded Projects Data (Fallback for file:// protocol)
 const EMBEDDED_PROJECTS = [
@@ -457,6 +458,44 @@ function initSkillsFilter() {
     });
     
     renderSkills('all');
+}
+
+// Cursor Indicator
+function initCursorIndicator() {
+    if (!cursorIndicator) return;
+    if (window.matchMedia('(pointer: coarse)').matches) {
+        cursorIndicator.style.display = 'none';
+        return;
+    }
+
+    let hideTimeout;
+
+    const showIndicator = () => {
+        cursorIndicator.classList.add('is-visible');
+        cursorIndicator.classList.remove('is-hidden');
+        clearTimeout(hideTimeout);
+        hideTimeout = setTimeout(() => {
+            cursorIndicator.classList.add('is-hidden');
+        }, 1500);
+    };
+
+    document.addEventListener('mousemove', (event) => {
+        cursorIndicator.style.left = `${event.clientX}px`;
+        cursorIndicator.style.top = `${event.clientY}px`;
+        showIndicator();
+    });
+
+    document.addEventListener('mousedown', () => {
+        cursorIndicator.classList.add('is-active');
+    });
+
+    document.addEventListener('mouseup', () => {
+        cursorIndicator.classList.remove('is-active');
+    });
+
+    document.addEventListener('mouseleave', () => {
+        cursorIndicator.classList.add('is-hidden');
+    });
 }
 
 // Store projects globally for modal
@@ -889,6 +928,7 @@ function init() {
     initCommandPalette();
     initCVDownload();
     initSmoothScroll();
+    initCursorIndicator();
     
     // Navbar scroll effect
     window.addEventListener('scroll', handleNavbarScroll);
